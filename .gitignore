@@ -36,3 +36,8 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 .next
+
+# Ignore .env file containing credentials, API keys, and other environment
+# variables that should not be shared with others.
+.env
+.env.local
