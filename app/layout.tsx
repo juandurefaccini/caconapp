@@ -28,8 +28,12 @@ export default function RootLayout({
       <link rel="manifest" href="/manifest.json" />
       <body className={inter.className}>
         <Providers >
-          <Navbar />
-          {children}
+          <div className='h-screen flex flex-col'>
+            <Navbar />
+            <div className='h-full'>
+              {children}
+            </div>
+          </div>
         </Providers>
       </body>
     </html>
